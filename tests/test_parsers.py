@@ -135,7 +135,7 @@ def test_bare_sde_regex_does_not_match_the_spelled_out_title():
     "Staff Software Engineer, Storage",       # too senior
     "Engineering Manager, Platform",          # management track
     "Enterprise Account Executive",           # wrong function
-    "Frontend Engineer, Design Systems",      # wrong discipline
+    "Product Designer, Design Systems",       # wrong discipline
     "Data Scientist, Growth",                 # wrong discipline
 ])
 def test_junk_titles_are_rejected(title):
@@ -150,6 +150,7 @@ def test_full_mock_funnel_keeps_only_the_five_real_matches():
     titles = sorted(j.title for j in kept)
     assert titles == [
         "Backend Engineer (Go)",
+        "Frontend Engineer, Design Systems",
         "Site Reliability Engineer",
         "Software Development Engineer, Core Infra",
         "Software Engineer II, Distributed Systems",

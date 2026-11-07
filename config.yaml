@@ -9,6 +9,8 @@ filters:
     - 'software development engineer'
     - 'software engineer'
     - 'junior software engineer'
+    - 'site reliability engineer'
+    - '\bsre\b'
     - 'member of technical staff'
 
   exclude_titles:
